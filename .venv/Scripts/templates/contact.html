@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height:100%;
+            text-align:center;
+        }
+        h1 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .a{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:yellow;
+            color:black;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+        .a:hover{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:black;
+            color:yellow;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact</h1>
+        <a class="a" href="{{ url_for('index') }}">Home</a>
+        <a class="a" href="{{ url_for('aboutme') }}">About me</a>
+        <a class="a" href="{{ url_for('gallery') }}">Gallery</a>
+        <a class="a" href="#">Contact</a>
+        <br><br><br><br><br><br>
+        <p style="text-align:left">
+            Thank you for your interest in contacting me! Please feel free to reach out using the information below:
+<br><br>
+Contact Information<br>
+Email: <a id="a" href="mailto:someone@example.com">Send email</a><br>
+Phone: 456 324 123<br>
+Address: Wrocław Fabryczna 14<br><br>
+
+Connect with me on social media:<br>
+Twitter: @YourTwitterHandle<br>
+Facebook: Your Facebook Page<br>
+LinkedIn: Your LinkedIn Profile<br>
+
+        </p>
+    </div>
+</body>
+</html

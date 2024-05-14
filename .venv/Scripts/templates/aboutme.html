@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height:100%;
+            text-align:center;
+        }
+        h1 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:yellow;
+            color:black;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+        a:hover{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:black;
+            color:yellow;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About me</h1>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="#">About me</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <br><br><br><br><br><br>
+        <p style="text-align:left">Hello there! I'm [Your Name], a [Your Profession/Title] based in [Your Location]. I have a passion for [Your Passion/Interest], and I'm dedicated to [Brief Description of Your Goals or Mission].<br><br>
+
+Background<br>
+I have [Number of Years] years of experience in [Your Field/Area of Expertise]. Throughout my career, I've had the opportunity to [Briefly Describe Key Experiences or Achievements]. I'm constantly seeking new challenges and opportunities to expand my skills and knowledge.<br><br>
+
+Interests<br>
+Outside of work, I enjoy [Hobbies or Interests]. Whether it's [Specific Interest 1], [Specific Interest 2], or [Specific Interest 3], I find joy and inspiration in [Brief Description of Why You Enjoy Your Interests].<br><br>
+
+Philosophy<br>
+I believe in [Your Philosophical Beliefs or Values]. I'm committed to [Briefly Describe Your Commitments or Principles], both personally and professionally.<br><br></p>
+    </div>
+</body>
+</html

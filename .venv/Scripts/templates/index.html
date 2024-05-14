@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height:100%;
+            text-align:center;
+        }
+        h1 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:yellow;
+            color:black;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+        a:hover{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:black;
+            color:yellow;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Home</h1>
+        <a href="#">Home</a>
+        <a href="{{ url_for('aboutme') }}">About me</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <br><br><br><br><br><br>
+        <p style="text-align:left">Welcome to [Company Name]!
+
+At [Company Name], we're dedicated to providing top-quality [products/services] that exceed your expectations. Our mission is to [briefly describe mission or purpose].<br><br>
+
+Why choose us?<br><br>
+
+Quality: We pride ourselves on offering only the highest quality [products/services], ensuring your satisfaction with every purchase.<br>
+
+Customer Service: Our friendly and knowledgeable team is here to assist you every step of the way. Have a question or need assistance? Don't hesitate to reach out!<br>
+
+Affordability: We believe that everyone should have access to [products/services] they love, which is why we strive to keep our prices competitive without compromising on quality.<br><br>
+
+Browse our website to explore our wide range of [products/services], and feel free to contact us if you have any questions or special requests. Thank you for choosing [Company Name]!</p>
+    </div>
+</body>
+</html
